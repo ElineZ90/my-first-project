@@ -109,7 +109,42 @@ public class Main {
         String result = (time < 18) ? "Good day." : "Good evening.";
         System.out.println(result);
 
-        // Next up: Java Switch w3wchools.com/java/java_switch.asp
+        // switchin it up
+
+        int cat = 1;
+        String catString;
+        catString = switch (cat) {
+            case 1 -> "Tofu ";
+            case 2 -> "Yoda ";
+            case 3 -> "Muffin ";
+            default -> "We love all cats ";
+        };
+
+        // While loop
+
+        int i = -1;
+        while(i <= 5) {
+            System.out.println("Hello " + (catString) + i);
+            i++;
+        }
+
+        // For loop
+
+        for (int x = 0; x < 5; x++) {
+            System.out.println(x);
+        }
+
+        // Nested loops don't seem very practical but i'm aware of their existence. moving on to for-each loops
+
+        String[] catNames = {"Tofu", "Yoda", "Muffin"};
+        for (String y : catNames) {
+            System.out.println(y);
+        }
+        System.out.println(catNames[1]);
+        
+
+
+    
 
 
 
